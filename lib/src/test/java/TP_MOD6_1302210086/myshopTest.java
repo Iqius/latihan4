@@ -18,8 +18,8 @@ public class myshopTest {
     @Test
     public void gausaDiskon() {
         myshop shop = new myshop();
-        double[] itemPrices = {800, 900, 700};
-        double expectedTotal = 2400.0; 
+        double[] itemPrices = {800, 800, 700};
+        double expectedTotal = 2300.0; 
         double actualTotal = shop.priceCalc(itemPrices);
         assertEquals(expectedTotal, actualTotal, 0.001);
     }
